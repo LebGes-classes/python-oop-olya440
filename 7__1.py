@@ -11,12 +11,15 @@ class Book:
 
     # Методы get для доступа к приватным полям
     def get_title(self):
+        
         return self.__title
 
     def get_author(self):
+        
         return self.__author
 
     def get_pages(self):
+        
         return self.__pages
 
     # Методы set для изменения приватных полей с проверкой
@@ -40,6 +43,7 @@ class Book:
     # Собственные методы
     def is_long(self):
         """Проверяет, является ли книга длинной."""
+        
         return self.__long > 300
 
     def reset(self):
@@ -121,3 +125,4 @@ class Main:
     # Создание и запуск меню для выбранной книги
     menu = Menu(selected_book)
     menu.run()
+
